@@ -549,7 +549,54 @@
 	<script src="js/particles.min.js"></script>
 	<script src="js/app.js"></script>
 	<script src="js/main.js"></script>
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    @keyframes shake {
+      0% {
+        transform: translateX(0);
+      }
+      25% {
+        transform: translateX(-5px) rotate(-5deg);
+      }
+      75% {
+        transform: translateX(5px) rotate(5deg);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
 
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 35px;
+      height: 35px;
+      background-color: green;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      z-index: 9999;
+      animation: shake 1s infinite;
+      animation-delay: 1s;
+    }
+
+    .whatsapp-button img {
+      width: 42px;
+      height: 42px;
+    }
+  </style>
+</head>
+<body>
+  <a href="https://wa.me/+918510062945" target="_blank" class="whatsapp-button">
+    <img src="https://mobirise.com/extensions/chat-button/assets/images/whatspp-1076x1076.png" alt="WhatsApp Logo">
+  </a>
+</body>
+</html>
 </body>
 
 </html>
