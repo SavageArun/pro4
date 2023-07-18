@@ -590,13 +590,23 @@
       height: 42px;
     }
   </style>
+  <script>
+    function openWhatsApp() {
+      var message = "Hello Arun! Let's Talk about a Project.";
+      var encodedMessage = encodeURIComponent(message);
+      var phoneNumber = "your-whatsapp-number";
+      var url = "https://wa.me/+918510062945" + phoneNumber + "?text=" + encodedMessage;
+      window.open(url, "_blank");
+    }
+  </script>
 </head>
 <body>
-  <a href="https://wa.me/+918510062945" target="_blank" class="whatsapp-button">
+  <div class="whatsapp-button" onclick="openWhatsApp()">
     <img src="https://mobirise.com/extensions/chat-button/assets/images/whatspp-1076x1076.png" alt="WhatsApp Logo">
-  </a>
+  </div>
 </body>
 </html>
+
 </body>
 
 </html>
